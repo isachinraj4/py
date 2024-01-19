@@ -26,7 +26,7 @@ app.add_middleware(
 )
 @app.get("/", tags=["Root"])
 async def read_root():
-    return sample.outputFun()
+    return {"message": "Hello World"}
 
 
 @app.get("/items/{item_id}")
